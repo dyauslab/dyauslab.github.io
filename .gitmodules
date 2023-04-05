@@ -1,3 +1,6 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "themes/iris"]
+	path = themes/iris
+	url = https://github.com/peaceiris/hugo-theme-iris
