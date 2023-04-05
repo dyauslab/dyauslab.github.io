@@ -1,5 +1,4 @@
 baseURL = 'https://dyauslab.github.io'
 languageCode = 'en-us'
 title = 'Dyaus Lab'
-theme = 'ananke'
 theme = 'iris'
