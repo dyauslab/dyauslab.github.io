@@ -7,14 +7,14 @@ copyright = "Dyaus Lab, LLC ©"
 
 [params]
   name = "Dyaus Lab"
-  description = "Dyaus Lab"
+  description = "Let's liberate AI for everyone"
   initials = "Dyaus"
   googleAnalytics = ""
 
   [[params.social]]
-    name = "Twitter"
+    name = "Discord"
     link = "#"
-    icon = "fab fa-twitter"
+    icon = "fab fa-discord"
 
   [[params.social]]
     name = "Github"
@@ -34,8 +34,8 @@ copyright = "Dyaus Lab, LLC ©"
 
 [menu]
   [[menu.main]]
-    name = "Digital Garden"
-    url = "/garden/"
+    name = "blogs"
+    url = "/blogs/"
     weight = 1
   [[menu.main]]
     name = "Projects"
