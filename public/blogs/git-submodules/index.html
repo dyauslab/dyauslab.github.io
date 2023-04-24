@@ -17,8 +17,8 @@
     
     
     
-    <title>Dyaus Lab | Blogs</title>
-    <meta name="description" content="">
+    <title>Dyaus Lab | Dev&amp;Ops series 1 - Git Submodules</title>
+    <meta name="description" content="How to remove a git submodules">
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="https://dyauslab.github.io">
@@ -51,41 +51,59 @@
     </div>
 </nav><div id="content">
 
-<div class="container">
-    <div class="py-5 rounded-3">
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">Blogs</h1>
-            <p class="bio col-md-8 fs-4 serif"></p>
+            <h1 class="display-2 mb-4 text-center">Dev&amp;Ops series 1 - Git Submodules</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">How to remove a git submodules</p>
+        
+        <div class="text-center pt-4">
+            
         </div>
     </div>
-</div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Apr 23, 2023 - 
+                
+                Last updated: Apr 23, 2023
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-    
-    <p>
-        <h3><a class="title" href="/blogs/git-submodules/">Dev&amp;Ops series 1 - Git Submodules</a></h3>
-        
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <p>Git submodules can be a powerful tool in managing dependencies within a Git repository, but they can also be a bit tricky to work with. As someone who doesn&rsquo;t use them frequently, I recently found myself needing to use them when playing around with Hugo themes. Through some trial and error, I discovered a simple yet effective method that worked for me. In this blog post, I will share my experience and provide step-by-step instructions to help you successfully work with Git submodules in your own projects.</p>
+<h2 id="how-to-remove-git-submodules-properly">How to remove git submodules properly</h2>
+<h3 id="1-deinit-the-submodule">1. deinit the submodule</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git submodule deinit &lt;submodule_directory&gt;
+</span></span></code></pre></div><h3 id="2-remove-the-submodule-directory-from-git">2. remove the submodule directory from git</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git rm &lt;submodule_directory&gt;
+</span></span></code></pre></div><h3 id="3-remove-the-submodule-directory-from-gitmodules">3. remove the submodule directory from .git/modules</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ rm -rf .git/modules/&lt;submodule_directory&gt;
+</span></span></code></pre></div><h3 id="after-this-is-done-you-can-commit-the-changes-and-push">After this is done, you can commit the changes and push</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m<span style="color:#d88200">&#34;messsage....&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><h3 id="reference">Reference:</h3>
+<p><a href="https://anjanashankar.com/2021/05/19/git-submodules/">https://anjanashankar.com/2021/05/19/git-submodules/</a></p>
 
-<i data-feather="calendar"></i>
-<time datetime="2023-04-23">Apr 23, 2023</time>
-
-        <a class="summary" href="/blogs/git-submodules/">
-            <p>How to remove a git submodules</p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/blogs/first-post/">First Post</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2023-04-23">Apr 23, 2023</time>
-
-        <a class="summary" href="/blogs/first-post/">
-            <p>Introduction We are bold getting ready, emphasized take off.</p>
-        </a>
-    </p>
-    
+        </div>
+    </div>
 </div>
 
 
